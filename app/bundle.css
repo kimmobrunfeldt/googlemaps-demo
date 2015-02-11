@@ -110,9 +110,10 @@ html {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background: #4bb5c1;
+  background: #1c4347;
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
 .icon-button > * {
   position: absolute;
@@ -138,15 +139,17 @@ html {
   position: absolute;
 }
 .filter {
-  right: 8px;
-  bottom: 64px;
+  left: 14px;
+  bottom: 70px;
 }
 .my-location {
-  right: 8px;
-  bottom: 14px;
+  left: 14px;
+  bottom: 16px;
 }
 .loader {
-  padding: 10px;
+  position: absolute;
+  left: 74px;
+  bottom: 20px;
 }
 /* Map marker */
 .map-marker {

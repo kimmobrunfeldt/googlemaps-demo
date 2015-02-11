@@ -25,13 +25,6 @@ function initMap() {
     var map = new Map('#map');
     window.map = map;
 
-    var timer = new Timer(function() {
-        return updateVehicles(map);
-    }, {
-        interval: config.updateInterval
-    });
-    timer.start();
-
     var myLocationButton = document.querySelector('#my-location');
     myLocationButton.onclick = function onMyLocationClick() {
         showLoader();

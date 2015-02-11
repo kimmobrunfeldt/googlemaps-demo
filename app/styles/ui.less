@@ -5,8 +5,9 @@
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background: @blue-dark;
+  background: @blue-x-dark;
   transition: all 0.1s ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
 
   // Center children
   & > * {
@@ -30,21 +31,23 @@
 }
 
 
-@button-side-margin: 8px;
-@button-bottom-margin: 14px;
+@button-side-margin: 14px;
+@button-bottom-margin: 16px;
 
 .filter {
-  right: @button-side-margin;
-  bottom: @button-bottom-margin + 50px;
+  left: @button-side-margin;
+  bottom: @button-bottom-margin + 54px;
 }
 
 .my-location {
-  right: @button-side-margin;
+  left: @button-side-margin;
   bottom: @button-bottom-margin;
 }
 
 .loader {
-  padding: 10px;
+  position: absolute;
+  left: @button-side-margin + 60px;
+  bottom: @button-bottom-margin + 4px;
 }
 
 @icon-size: 24px;
